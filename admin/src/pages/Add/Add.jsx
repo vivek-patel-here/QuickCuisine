@@ -5,7 +5,7 @@ import axios from "axios";
 import { ToastContainer} from "react-toastify"
 
 function Add() {
-  const url = "http://localhost:4000";
+  const url = "https://quickcuisineserver.onrender.com";
   const [image, setImage] = useState(false);
   const [data, setData] = useState({
     name: "",
