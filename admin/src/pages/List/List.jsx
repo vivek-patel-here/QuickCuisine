@@ -4,7 +4,7 @@ import "./List.css";
 import { assets } from "../../assets/assets.js";
 
 function List() {
-  const url = "http://localhost:4000";
+  const url = "https://quickcuisineserver.onrender.com";
   const [list, setList] = useState([]);
 
   //method to fetch listings from the database
