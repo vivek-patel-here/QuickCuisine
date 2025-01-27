@@ -25,6 +25,10 @@ app.use("/food",foodRoute);
 app.use("/cart",isAuthenticated,cartRoute);
 app.use("/order",orderRoute)
 
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
+
 app.listen(4000,()=>{
     console.log('server is listening at port 4000');
 })
