@@ -8,7 +8,7 @@ const storeContextProvider = (props) => {
   let [cart, setCart] = useState({});
   let [isAuthenticated, setIsAuthenticated] = useState(false);
   let [food_list, setFoodList] = useState([]);
-  const url ='http://localhost:4000';
+  const url ='https://quickcuisineserver.onrender.com';
 
   const errMsg = (msg) => {
     return toast.error(msg, { autoClose: 1200, position: "top-center" });
