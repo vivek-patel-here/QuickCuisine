@@ -1,0 +1,92 @@
+.add{
+    width: 70%;
+    padding: 50px max(5vw,25px);
+    
+}
+
+.add form{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+}
+
+.add .upload-img{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.upload-img img{
+    width: 125px;
+}
+
+.add .prod-name{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.prod-name p{
+    font-size: 1.2rem;
+}
+
+.prod-name input{
+    max-width: max(40%,288px);
+    height: 30px;
+    padding: 10px;
+}
+
+.prod-desc{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.prod-desc p{
+    font-size: 1.2rem;
+}
+.prod-desc textarea{
+    max-width: max(40%,288px);
+    height: 100px;
+    padding: 10px;
+}
+.add .prod-price-category{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.prod-category,.prod-price{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 8px;
+}
+.prod-category p, .prod-price p{
+    font-size: 1.2rem;
+   
+}
+
+.prod-price input{
+    max-width: max(20%,2550px);
+    height: 30px;
+    padding-left: 10px;
+
+}
+
+.prod-category select{
+    max-width: max(20%,2550px);
+    height: 30px;
+}
+
+.add form button{
+    width: 150px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}

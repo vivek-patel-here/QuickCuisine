@@ -1,0 +1,76 @@
+.Foodcard {
+  width: 260px;
+  margin: auto;
+  box-shadow: 2px 2px 5px rgb(63, 62, 62);
+  transition: fadeEffect 0.2s ease-in;
+  border-radius: 15px;
+}
+
+.img-container {
+  position: relative;
+}
+
+.Foodcard .img-container .bgimg {
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.Foodcard .food-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.Foodcard .food-details .food-desc {
+  text-align: start;
+  font-size: 0.9rem;
+}
+
+.Foodcard .food-details .food-item-name-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.food-item-name-rating p {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.food-item-name-rating img {
+  height: 15px;
+}
+
+.food-details .price {
+  color: tomato;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.Foodcard .img-container .add {
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.Foodcard .plus-minus {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: white;
+  border-radius: 50px;
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Foodcard .img-container .plus,.Foodcard .img-container .minus {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}

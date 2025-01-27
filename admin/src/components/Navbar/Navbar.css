@@ -1,0 +1,12 @@
+.navbar{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:6px 4% ;
+    border-bottom: 1px solid #a9a9a9;
+}
+
+.navbar img:nth-of-type(1){
+    height: 80px;
+}

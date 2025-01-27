@@ -1,0 +1,19 @@
+@keyframes fadeEffect {
+    from{
+        opacity: 0;
+        bottom: 15%;
+    }
+    to{
+        bottom: 10%;
+        opacity: 1;
+    }
+}
+.Home .divider{
+    margin: 5vh 0px;
+    height: 3px ;
+    background-color: rgba(255, 68, 0, 0.445);
+    outline: none;
+    border: none;
+    border-radius: 20px;
+
+}

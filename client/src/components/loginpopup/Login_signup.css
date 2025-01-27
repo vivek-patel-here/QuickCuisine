@@ -1,0 +1,90 @@
+.page-container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #000000cc;
+  z-index: 1000;
+}
+
+.page-container .loginform {
+    border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 50px;
+  gap: 20px;
+}
+
+.loginform .form-header {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.loginform .form-header img{
+    cursor: pointer;
+}
+
+.loginform .input-grp {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginform .input-grp input {
+  margin-bottom: 20px;
+  height: 40px;
+  width: 100%;
+  border: 1px solid black;
+  outline: none;
+  padding-left: 10px;
+  border-radius: 10px;
+}
+
+.loginform button{
+    width: 35%;
+    height: 35px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid orangered;
+    color: orangered;
+    background-color: white;
+    font-size:16px;
+    cursor: pointer;
+}
+
+.loginform button:hover{
+    background-color: orangered;
+    color: white;
+}
+
+.loginform span{
+    color: orangered;
+    transition: 0.1s;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.loginform span:hover{
+    text-decoration: underline;
+
+}
+
+.loginform .form-header h1{
+    color: orangered;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+@media (max-width:600px) {
+    .page-container .loginform{
+        width: 360px;
+        padding: 30px 30px;
+    }
+}

@@ -1,0 +1,154 @@
+.Navbar {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Navbar>.nav-logo{
+    height:100%
+}
+
+.Navbar > .nav-menu {
+  height: 100%;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vw;
+}
+
+.Navbar > .nav-menu a{
+  font-size: 1.rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  color: rgb(49, 49, 49);
+  text-decoration: none;
+}
+
+.Navbar .active{
+    padding-bottom: 4px;
+   border-bottom: 2px solid orangered;
+
+}
+
+.Navbar > .nav-right {
+  height: 100%;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vw;
+}
+.Navbar > .nav-right  .icon {
+  cursor: pointer;
+  height: 25px;
+
+}
+
+.Navbar > .nav-right > button {
+  height: 30px;
+  width: 65px;
+  border-radius: 20px;
+  border: 1px solid orangered;
+  outline: none;
+  color: orangered;
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in;
+}
+
+.Navbar >.nav-right>button:hover{
+    background-color: orangered;
+    border: 1px solid orangered;
+    color: white;
+}
+
+.Navbar .nav-cart{
+    position: relative;
+}
+
+.Navbar .badge{
+    position: absolute;
+    min-height: 8px;
+    min-width: 8px;
+    background-color: red;
+    top: -8px;
+    right: -8px;
+    border-radius: 50%;
+}
+.nav-profile-container{
+  position: relative;
+}
+.nav-profile-dropdown{
+  position: absolute;
+  width: min(150px,15vw);
+  display: flex;
+  flex-direction: column;
+  left: -250%;
+  z-index: 9;
+  border-radius: 5px;
+  border: 1px solid slategray;
+  background-color:rgb(255, 255, 255);
+}
+
+.nav-profile-dropdown li{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+  padding: 18px 20px;
+  
+}
+
+.nav-profile-dropdown li:hover{
+  background-color: rgba(255, 68, 0, 0.356);
+  color: white
+}
+
+
+@media (max-width:900px) {
+  
+  .Navbar .nav-logo{
+    height: 2rem;
+    transition: 0.2s;
+  }
+
+  .Navbar .nav-menu li{
+    font-size: 12px;
+  }
+  .Navbar .nav-right .icon{
+    height: 18px;
+  }
+
+  .Navbar .nav-right button{
+    height: 20px;
+  width: 50px;
+  border-radius: 20px;
+ font-size: 0.8rem;
+
+  }
+
+  .nav-profile-dropdown{
+    width: 75px;
+  }
+  .nav-profile-dropdown li p{
+    display: none;
+  }
+}
+@media (max-width:600px) {
+  .Navbar .nav-logo{
+    height:2.5rem;
+    transition: 0.2s;
+  }
+
+  .Navbar .nav-menu{
+    display: none;
+  }
+  .Navbar .nav-right{
+    width: 35%;
+    justify-content: space-between;
+  }
+}
