@@ -7,7 +7,7 @@ function Order() {
   let [orders, setOrders] = useState([]);
 
   const fetchOrders = async () => {
-    let response = await fetch("http://localhost:4000/order/all", {
+    let response = await fetch("https://quickcuisineserver.onrender.com/order/all", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -26,7 +26,7 @@ function Order() {
   }, []);
 
   const updateInfo = async (event, orderId) => {
-    let response = await fetch(`http://localhost:4000/order`, {
+    let response = await fetch(`https://quickcuisineserver.onrender.com/order`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
