@@ -52,7 +52,7 @@ const placeOrder = async (req, res) => {
       customer_phone: PhoneNum.toString(),
     },
     order_meta: {
-      return_url: `https://quickcuisineclient.onrender.com/#/verify?success=true&orderId=${newOrder._id}`,
+      return_url: `https://quickcuisineclient.onrender.com/verify?success=true&orderId=${newOrder._id}`,
     },
     order_note: "",
   };
